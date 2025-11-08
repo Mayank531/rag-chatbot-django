@@ -29,3 +29,34 @@ A **PDF-powered RAG chatbot** that understands **text, tables, graphs, and image
 ---
 
 ## Project Structure
+
+rag_chatbot_django/
+├── rag_app/
+│   ├── models.py
+│   ├── views.py
+│   ├── urls.py
+│   └── utils/
+│       ├── pdf_processor.py
+│       ├── vector_store.py
+│       └── rag_bot.py
+├── media/
+│   └── processed/     ← FAISS + images per doc
+├── .env
+├── .gitignore
+├── requirements.txt
+├── manage.py
+└── README.md
+
+
+---
+
+## Setup
+
+### 1. Clone & Enter
+```bash
+git clone https://github.com/yourusername/rag-chatbot-django.git
+cd rag-chatbot-django
+
+python -m venv venv
+venv\Scripts\activate    # Windows
+source venv/bin/activate  # macOS/Linux
